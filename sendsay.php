@@ -78,7 +78,7 @@ function send_trigger_email($email) {
         'action' => 'sendtrigger',       
         'email' => $email,              
         'listid' => 'pl78183', 
-        'trigger_id' => '1' // ID триггера
+        'trigger_id' => '1' 
     ];
 
     $options = [
