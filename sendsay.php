@@ -45,7 +45,7 @@ function sendSendsay($name, $email, $pet_category, $pet_name) {
     $data = [
         'name' => $name,
         'email' => $email,
-        'login' => 'x_1742400453806537',           // Ваш логин в Sendsay
+        'login' => 'x_1742400453806537',       
         'fields' => [
             'pet_category' => $pet_category,
             'pet_name' => $pet_name
@@ -75,8 +75,8 @@ function sendSendsay($name, $email, $pet_category, $pet_name) {
 function send_trigger_email($email) {
     $url = "https://api.sendsay.ru/handler_apimail.php";
     $data = [
-        'action' => 'sendtrigger',        // Отправка триггерного письма
-        'email' => $email,                // Email получателя
+        'action' => 'sendtrigger',       
+        'email' => $email,              
         'listid' => 'pl78183', 
         'trigger_id' => '1' // ID триггера
     ];
