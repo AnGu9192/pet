@@ -40,7 +40,7 @@ $conn->close();
 // Функция для отправки данных в Sendsay
 function sendSendsay($name, $email, $pet_category, $pet_name) {
     $api_key = '18Gb7axvxJ7y4U1pdJ5lm-a4Bwekmok2vkEpOxnSmYMrw3NuS6rH65ty4TqD1kZeOsxhXt-868WQg'; 
-    $url = 'Адрес будет такой https://api.sendsay.ru/general/api/v100/json/x_1742400453806537';
+    $url = 'https://api.sendsay.ru/general/api/v100/json/x_1742400453806537';
 
     $data = [
         'name' => $name,
