@@ -73,7 +73,7 @@ function sendSendsay($name, $email, $pet_category, $pet_name) {
 
 //Отправка триггерного письма
 function send_trigger_email($email) {
-    $url = "https://api.sendsay.ru/handler_apimail.php";
+    $url = " $url = "https://api.sendsay.ru/general/api/v100/json/x_1742400453806537"";
     $data = [
         'action' => 'sendtrigger',    
         'email' => $email,          
