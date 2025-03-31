@@ -40,12 +40,12 @@ $conn->close();
 // Функция для отправки данных в Sendsay
 function sendSendsay($name, $email, $pet_category, $pet_name) {
     $api_key = '18Gb7axvxJ7y4U1pdJ5lm-a4Bwekmok2vkEpOxnSmYMrw3NuS6rH65ty4TqD1kZeOsxhXt-868WQg'; 
-    $url = 'https://api.sendsay.ru/v3/mail/send.json';
+    $url = 'Адрес будет такой https://api.sendsay.ru/general/api/v100/json/x_1742400453806537';
 
     $data = [
         'name' => $name,
         'email' => $email,
-        'login' => 'x_1742400453806537',       
+        'login' => 'x_1742400453806537',           
         'fields' => [
             'pet_category' => $pet_category,
             'pet_name' => $pet_name
@@ -75,10 +75,10 @@ function sendSendsay($name, $email, $pet_category, $pet_name) {
 function send_trigger_email($email) {
     $url = "https://api.sendsay.ru/handler_apimail.php";
     $data = [
-        'action' => 'sendtrigger',       
-        'email' => $email,              
+        'action' => 'sendtrigger',    
+        'email' => $email,          
         'listid' => 'pl78183', 
-        'trigger_id' => '1' 
+        'trigger_id' => '2' 
     ];
 
     $options = [
